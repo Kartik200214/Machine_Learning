@@ -1,0 +1,25 @@
+
+# Consider below characteristics of Machine Learning Application:
+
+# Classifier :       Decision Tree
+# Dataset :          Iris Dataset
+# Features :         Sepal length,Sepal width,petal length,petal width.
+# Lables  :          Versicolour,Setosa,Virginica
+# Training Dataset : 150 Entries
+# Testing Dataset :  1 Entry
+
+from sklearn.datasets import load_iris
+
+iris = load_iris()
+
+print("Feature names of iris data set")
+print(iris.feature_names)
+
+print("Target names of iris data set")
+print(iris.target_names)
+
+print("The elements from iris data set")
+
+for i in range(len(iris.target)):
+    print("ID: %d,Lable %s,Feature : %s" %(i,iris.data[i],iris.target[i]))
+
